@@ -10,7 +10,7 @@ logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s',
                     )
 
 def main():
-    mybot = Updater("509144200:AAGoB1WgyWiasouuaO2jPhD7IG0pHRz2iyc", request_kwargs=PROXY)
+    mybot = Updater("TelegramKey", request_kwargs=PROXY)
     
     dp = mybot.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
